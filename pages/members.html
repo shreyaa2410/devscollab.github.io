@@ -1,71 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Meta tag is used for providing information to the Search Engines -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Members of DevsCollab OpenSource Organization">
-    <meta name="keywords"
-        content="members, devscollab, devs, collab, portfolio, developers, android, web, digital, opensource, organization">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Members of DevsCollab OpenSource Organization"
+    />
+    <meta
+      name="keywords"
+      content="members, devscollab, devs, collab, portfolio, developers, android, web, digital, opensource, organization"
+    />
     <title>Members</title>
-    <link rel="stylesheet" href="../css/members.css">
+    <link rel="stylesheet" href="../css/members.css" />
 
     <!-- Favicon Link -->
-    <link rel="shortcut icon" href="../images/favicon-circ-dark.png" type="image/PNG">
+    <link
+      rel="shortcut icon"
+      href="../images/favicon-circ-dark.png"
+      type="image/PNG"
+    />
 
     <!-- Material Css Link -->
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
 
     <!-- Semantic Ui Image CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/image.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/image.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <div class="page">
+      <div class="container main-container">
+        <center><h4 data-tilt>DevsCollab OpenSource Members</h4></center>
 
-        <div class="container main-container">
-            <center><h4>DevsCollab OpenSource Members</h4></center>
-
-            <div id="app" class="members">
-                <div v-for="(i,id) in list" :key="id">
-                    <a class="card" id="member-cards" :href="i.html_url">
-                        <img class="ui medium circular image" :src="i.avatar_url"
-                            style="height: 100px; width: 100px; margin-bottom: 10px">
-                        <span class="member-card-title">{{i.login}}</span>
-                    </a>
-                </div>
-            </div>
-
+        <div id="app" class="members">
+          <div v-for="(i,id) in list" :key="id">
+            <a
+              class="card"
+              id="member-cards"
+              :href="i.html_url"
+              target="_blank"
+            >
+              <img
+                class="ui medium circular image"
+                :src="i.avatar_url"
+                style="height: 150px; width: 150px; margin-bottom: 10px"
+              />
+              <span class="member-card-title">{{i.login}}</span>
+            </a>
+          </div>
         </div>
-
+      </div>
     </div>
 
     <div class="footer">
-        <div class="copyright">
-            <a href="https://raw.githubusercontent.com/devscollab/devscollab.github.io/master/LICENSE" target="_blank">
-                &copy; 2019 DevsCollab
-            </a>
-        </div>
-        <div class="footer-links">
-            <a href="https://github.com/devscollab/devscollab.github.io/blob/master/README.md" target="_blank">
-                Get Started
-            </a>
-            <a href="https://github.com/devscollab/devscollab.github.io/blob/master/CODE_OF_CONDUCT.md" target="_blank">
-                Code of Conduct
-            </a>
-            <a href="../index.html" target="_blank">
-                Home
-            </a>
-        </div>
+      <div class="copyright">
+        <a
+          href="https://raw.githubusercontent.com/devscollab/devscollab.github.io/master/LICENSE"
+          target="_blank"
+        >
+          &copy; 2020 DevsCollab
+        </a>
+      </div>
+      <div class="footer-links">
+        <a
+          href="https://github.com/devscollab/devscollab.github.io/blob/master/README.md"
+          target="_blank"
+        >
+          Get Started
+        </a>
+        <a
+          href="https://github.com/devscollab/devscollab.github.io/blob/master/CODE_OF_CONDUCT.md"
+          target="_blank"
+        >
+          Code of Conduct
+        </a>
+        <a href="../index.html" target="_blank"> Home </a>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="../js/titlt.js"></script>
     <script src="../js/members.js"></script>
-</body>
-
+  </body>
 </html>

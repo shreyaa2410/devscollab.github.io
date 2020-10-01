@@ -5,100 +5,99 @@
     font-family: 'Righteous', sans-serif;
 
 */
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
 
 * {
-    user-select: none;
+  user-select: none;
 }
 
 body {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 h1 {
-    font-family: 'Righteous', sans-serif;
-    color: rgba(26, 17, 19, 1);
+  font-family: "Righteous", sans-serif;
+  color: rgba(26, 17, 19, 1);
 }
 
 .page {
-    height: 90vh;
-    overflow: auto;
+  height: 90vh;
+  overflow: auto;
 }
 
 .main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #member-cards {
-    height: 300px;
-    width: 250px;
-    padding: 2.5vh 10px;
-    margin: 20px 20px;
+  height: 300px;
+  width: 250px;
+  padding: 2.5vh 10px;
+  margin: 20px 20px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 }
 
 .member-cards-title {
-    text-align: center;
+  text-align: center;
 }
 
 .card-footer {
-    line-height: 2;
-    font-size: 1.1em;
-    text-align: justify;
-    letter-spacing: 0.5px;
+  line-height: 2;
+  font-size: 1.1em;
+  text-align: justify;
+  letter-spacing: 0.5px;
 }
 
 .footer {
-    height: 10vh;
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
-    padding: 20px;
-    background-color: rgba(38, 166, 154, 1);
-    color: white;
-    font-weight: bolder;
-    font-size: 1.1em;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  background-color: #d2e063;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.1em;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.footer-links>a,
-.footer>div>a {
-    margin: 10px;
-    color: inherit;
+.footer-links > a,
+.footer > div > a {
+  margin: 10px;
+  color: inherit;
 }
-
 
 /* Media Query for Responsive Website on Mobile */
 @media only screen and (max-width: 1000px) {
-    h1 {
-        font-size: 2em !important;
-    }
+  h1 {
+    font-size: 2em !important;
+  }
 
-    .card-footer {
-        width: auto;
-    }
+  .card-footer {
+    width: auto;
+  }
 
-    .members {
-        justify-content: center;
-    }
+  .members {
+    justify-content: center;
+  }
 
-    .footer {
-        font-size: 0.65em;
-    }
+  .footer {
+    font-size: 0.65em;
+  }
 }
